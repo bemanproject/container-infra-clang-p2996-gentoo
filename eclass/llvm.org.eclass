@@ -248,10 +248,8 @@ llvm.org_set_globals() {
 
 	case ${_LLVM_SOURCE_TYPE} in
 		git)
-			EGIT_REPO_URI="https://github.com/llvm/llvm-project.git"
-
-			[[ ${LLVM_MAJOR} != ${_LLVM_MAIN_MAJOR} ]] &&
-				EGIT_BRANCH="release/${LLVM_MAJOR}.x"
+			EGIT_REPO_URI="https://github.com/bloomberg/clang-p2996.git"
+			EGIT_BRANCH="p2996"
 			;;
 		tar)
 			if [[ ${LLVM_MAJOR} -ge 19 ]]; then
